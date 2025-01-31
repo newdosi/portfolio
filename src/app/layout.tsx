@@ -15,73 +15,47 @@ const rubik = Rubik({
   variable: "--font-rubik",
 });
 
-// export const metadata: Metadata = {
-//   metadataBase: new URL("https://mdTaquiImam.vercel.app"),
-//   title: {
-//     default: siteConfig.name,
-//     template: `%s - Software Engineer`,
-//   },
-//   description: siteConfig.description,
+export const metadata: Metadata = {
+  metadataBase: new URL("https://my-portfolio-sirakim0.vercel.app/"),
+  title: {
+    default: siteConfig.name,
+    template: `%s - Software Engineer`,
+  },
+  description: siteConfig.description,
 
-//   // added new keywords for seo
-//   keywords: [
-//     "md",
-//     "taqui",
-//     "imam",
-//     "Md",
-//     "MD",
-//     "TAQUI",
-//     "Taqui",
-//     "Imam",
-//     "Imam",
-//     "Md Taqui Imam",
-//     "md taqui imam",
-//     "mdtaqui",
-//     "mdtaquiimam",
-//     "taqui imam",
-//     "Taqui Imam",
-//     "Taquiimam",
-//     "portfolio",
-//     "web developer",
-//     "web",
-//     "web dev",
-//     "developer",
-//     "PROGRAMMER ",
-//     "programmer ",
-//     "MD TAQUI IMAM ",
-//     "website",
-//     "@Taquiimam",
-//     "Taquiimam",
-//     "taqui developer",
-//   ],
-//   authors: [
-//     {
-//       name: "sirakim",
-//       url: "https://github.com/taqui-786",
-//     },
-//   ],
-//   creator: "Taqui imam",
+  keywords: [
+    "portfolio",
+    "web designer",
+    "web",
+    "web dev",
+    "developer",
+    "website",
+  ],
+  authors: [
+    {
+      name: "sirakim",
+      url: "https://github.com/taqui-786",
+    },
+  ],
+  creator: "Taqui imam",
 
-//   openGraph: {
-//     type: "website",
-//     locale: "en_US",
-//     url: siteConfig.url,
-//     title: siteConfig.name,
-//     description: siteConfig.description,
-//     images: [`${siteConfig.url}/og-image.png`],
-//     siteName: siteConfig.name,
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: siteConfig.name,
-//     description: siteConfig.description,
-//     images: [`${siteConfig.url}/og-image.png`],
-//     creator: "@Taquiimam14",
-//   },
-//   icons: {
-//     icon: "/favicon.ico",
-//   },
-// };
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    creator: "sirakim",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({
   children,
