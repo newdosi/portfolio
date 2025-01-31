@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.6.0",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-toast": "^1.1.5",
     "@radix-ui/react-tooltip": "^1.0.7",
@@ -20,6 +21,7 @@
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-lottie-player": "^2.1.0",
     "resend": "^0.16.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
