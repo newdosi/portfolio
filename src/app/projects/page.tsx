@@ -8,7 +8,7 @@ import { Layers } from "lucide-react";
 import project1 from "../../../public/project1_cover.jpg";
 import project2 from "../../../public/project2_cover.png";
 
-const projectsPage = () => {
+const ProjectsPage = () => {
   const [selectedRole, setSelectedRole] = useState("all"); // 선택된 role 상태
 
   const Projects = [
@@ -89,4 +89,4 @@ const projectsPage = () => {
   );
 };
 
-export default projectsPage;
+export default ProjectsPage;
