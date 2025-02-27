@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import FramerWrapper from "./animation/FramerWrapper";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 interface projectcardprops {
   value: any;
@@ -25,14 +26,19 @@ const ProjectCards: React.FC<projectcardprops> = ({ value, num }) => {
       duration={0.15}
     >
       <Card className="w-full h-full">
-        <p className="font-bold mt-4 mx-5 px-4 bg-slate-200 text-slate-700 inline-flex rounded-full">
+        <Image
+          src={value.cover}
+          alt="프로젝트"
+          className="w-full h-40 object-cover"
+        />
+        {/* <p className="font-bold mt-4 mx-5 px-4 bg-slate-200 text-slate-700 inline-flex rounded-full ">
           {value.role}
-        </p>
+        </p> */}
         <CardHeader>
           <CardTitle>{value.title}</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-base font-poppins">{value.description}</p>
+          <p className="text-base font-poppins py-2">{value.description}</p>
           <div className=" w-full h-fit flex mt-2 justify-center flex-row gap-3">
             {value.tags.map((itm: string, indx: number) => {
               return (

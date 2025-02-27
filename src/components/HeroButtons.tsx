@@ -7,16 +7,16 @@ const url =
 export default function HeroButtons() {
   return (
     <div className="space-x-3">
-      {/* <Link href={url} target="_blank">
+      <Link href="/projects">
         <Button className="bg-indigo-600 hover:bg-indigo-800">
           프로젝트 보러가기
         </Button>
-      </Link> */}
-      <Link href={url} target="_blank">
+      </Link>
+      {/* <Link href={url} target="_blank">
         <Button className="bg-indigo-600 hover:bg-indigo-800">
           이력서 보러가기
         </Button>
-      </Link>
+      </Link> */}
     </div>
   );
 }
